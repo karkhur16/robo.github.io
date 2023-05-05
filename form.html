@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+    <form>
+        <h1 class="heading">Robotics Recruitment'23</h1>
+        <hr>
+        <p>* Indicates required question</p>
+        <hr>
+        <p>NAME *</p>
+        <input type="text" required name="name" style="width: 100%; padding: 20px;">
+        <p>WHATSAPP NO. *</p>
+        <input type="number" required style="width: 100%; padding: 5px;">
+        <p>SCHOLAR NO. *</p>
+        <input type="number" required name="sch" style="width: 100%; padding: 5px;">
+        <p>BRANCH * <br>
+            <select name="branch" id="branch" required class="branch">
+                <option value="">--SELECT--</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EE">EE</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Chemical">Chemical</option>
+                <option value="Civil">Civil</option>
+                <option value="MME">MME</option>
+                <option value="MDS">MDS</option>
+            </select>
+        </p>
+        <p>SKILLS * 
+            <fieldset required>
+                <input type="radio" required class="skill">Full Stack <br>
+                <input type="radio" required class="skill">Frontend <br>
+                <input type="radio" required class="skill">Backends <br>
+                <input type="radio" required class="skill">Other
+            </fieldset> 
+        </p>
+        <p>RESUME * <br>
+            <input type="submit" value="Add File" required style="margin-top: 15px; font-size: 18px;">
+        </p>
+        <input type="submit" value="Submit" style="margin-left: 800px; font-size: 30px;">
+        
+    </form>
+    </div>
+</body>
+</html>
+  
